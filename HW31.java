@@ -33,11 +33,9 @@ import java.util.Queue;
         // cell (i, j) to destination cell (x, y)
         private static int findShortestPathLength(int[][] mat, int i, int j, int x, int y)
         {
-            // base case: invalid input
             if (mat == null || mat.length == 0 || mat[i][j] == 0 || mat[x][y] == 0) {
                 return -1;
             }
-            // `M × N` matrix
             int M = mat.length;
             int N = mat[0].length;
             // construct a matrix to keep track of visited cells
